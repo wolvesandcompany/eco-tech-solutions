@@ -61,7 +61,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button variant="eco" size="lg">
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent-light">
               Get Started
             </Button>
           </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="eco" size="lg" className="w-full">
+                <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent-light">
                   Get Started
                 </Button>
               </div>
