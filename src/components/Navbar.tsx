@@ -48,7 +48,11 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-white transition-colors duration-200 font-medium"
+                className={`text-foreground transition-colors duration-200 font-medium ${
+                  isScrolled
+                    ? 'hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-accent'
+                    : 'hover:text-white'
+                }`}
               >
                 {link.name}
               </a>
@@ -83,7 +87,11 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block py-2 text-foreground hover:text-white transition-colors duration-200 font-medium"
+                  className={`block py-2 text-foreground transition-colors duration-200 font-medium ${
+                    isScrolled
+                      ? 'hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-accent'
+                      : 'hover:text-white'
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
