@@ -48,7 +48,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className="text-foreground hover:text-white transition-colors duration-200 font-medium"
               >
                 {link.name}
               </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="block py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  className="block py-2 text-foreground hover:text-white transition-colors duration-200 font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
